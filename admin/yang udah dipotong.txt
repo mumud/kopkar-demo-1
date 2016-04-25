@@ -1,0 +1,58 @@
+<?php include '../subweb/header.php' ?>
+
+<body>
+
+	<!-- START CONTAINER -->
+	<div class="page-container">
+
+		<?php include '../subweb/leftMenu.php' ?>
+
+		<!-- START CONTENT -->
+		<div class="page-content">
+			
+			<?php include '../subweb/headerMenu.php' ?>
+
+			<!-- START BREADCRUMB -->
+			<ul class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li class="active">Dashboard</li>
+			</ul>
+			<!-- END BREADCRUMB -->
+
+			<!-- PAGE CONTENT  -->
+			<div class="page-content-wrap">
+				
+				
+			</div>
+			<!-- END PAGE CONTENT  -->
+
+		</div>
+		<!-- END CONTENT -->
+	
+	</div>
+	<!-- END CONTAINER -->
+
+<!-- START SCRIPTS -->
+<!-- START PLUGINS -->
+<?php
+echo $helper->linkJs(BASE_URL.'plugin/js/plugins/jquery/jquery.min.js');
+echo $helper->linkJs(BASE_URL.'plugin/js/plugins/jquery/jquery-ui.min.js');
+echo $helper->linkJs(BASE_URL.'plugin/js/plugins/bootstrap/bootstrap.min.js');
+?>
+<!-- END PLUGINS -->
+<!-- START THIS PAGE PLUGINS-->
+<?php
+echo $helper->linkJs(BASE_URL.'plugin/js/plugins/icheck/icheck.min.js');
+echo $helper->linkJs(BASE_URL.'plugin/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js');
+?>
+<!-- END THIS PAGE PLUGINS-->
+<!-- START TEMPLATE -->
+<?php
+echo $helper->linkJs(BASE_URL.'plugin/js/settings.js');
+echo $helper->linkJs(BASE_URL.'plugin/js/plugins.js');
+echo $helper->linkJs(BASE_URL.'plugin/js/actions.js');
+?>
+<!-- END TEMPLATE -->
+<!-- END SCRIPTS -->
+</body>
+</html>

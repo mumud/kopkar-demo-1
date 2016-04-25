@@ -1,0 +1,107 @@
+<?php include '../subweb/header.php' ?>
+
+<body>
+
+	<!-- START CONTAINER -->
+	<div class="page-container">
+
+		<?php include '../subweb/leftMenu.php' ?>
+
+		<!-- START CONTENT -->
+		<div class="page-content">
+			
+			<?php include '../subweb/headerMenu.php' ?>
+
+			<!-- START BREADCRUMB -->
+			<ul class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li>Dashboard</li>
+				<li class="active">Account</li>
+			</ul>
+			<!-- END BREADCRUMB -->
+
+			<!-- PAGE CONTENT WRAPPER -->
+			<div class="page-content-wrap">
+				
+				<div class="row">
+					<div class="col-md-12">
+						<!-- START DEFAULT DATATABLE -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Default</h3>
+								<ul class="panel-controls">
+									<li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+									<li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Add</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="panel-body">
+								<table class="table datatable">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Position</th>
+											<th>Office</th>
+											<th>Age</th>
+											<th>Start date</th>
+											<th>Salary</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Tiger Nixon</td>
+											<td>System Architect</td>
+											<td>Edinburgh</td>
+											<td>61</td>
+											<td>2011/04/25</td>
+											<td>$320,800</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- END DEFAULT DATATABLE -->
+					</div>
+				</div>
+				
+			</div>
+			<!-- PAGE CONTENT WRAPPER -->
+
+		</div>
+		<!-- END CONTENT -->
+	
+	</div>
+	<!-- END CONTAINER -->
+
+<!-- START SCRIPTS -->
+<!-- START PLUGINS -->
+<?php
+echo $helper->linkJs(BASE_URL.'plugin/js/plugins/jquery/jquery.min.js');
+echo $helper->linkJs(BASE_URL.'plugin/js/plugins/jquery/jquery-ui.min.js');
+echo $helper->linkJs(BASE_URL.'plugin/js/plugins/bootstrap/bootstrap.min.js');
+?>
+<!-- END PLUGINS -->
+<!-- START THIS PAGE PLUGINS-->
+<?php
+echo $helper->linkJs(BASE_URL.'plugin/js/plugins/icheck/icheck.min.js');
+echo $helper->linkJs(BASE_URL.'plugin/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js');
+
+echo $helper->linkJs(BASE_URL.'plugin/js/plugins/datatables/jquery.dataTables.min.js');
+?>
+<!-- END THIS PAGE PLUGINS-->
+<!-- START TEMPLATE -->
+<?php
+echo $helper->linkJs(BASE_URL.'plugin/js/settings.js');
+echo $helper->linkJs(BASE_URL.'plugin/js/plugins.js');
+echo $helper->linkJs(BASE_URL.'plugin/js/actions.js');
+?>
+<!-- END TEMPLATE -->
+<!-- END SCRIPTS -->
+
+</body>
+</html>
